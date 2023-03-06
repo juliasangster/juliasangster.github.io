@@ -1,5 +1,4 @@
 # juliasangster.github.io
-<!DOCTYPE html>
 <html>
 <head>
 <title>W3.CSS Template</title>
