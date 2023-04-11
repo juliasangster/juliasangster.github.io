@@ -1,12 +1,9 @@
 <html>
 <body style = "background-color:white">
 
-<h1 style="background-color: white;
-           font-family:Helvetica">
-           
+<h1 style="background-color: white;font-family:Helvetica">
            Julia Sangster
-           
-           </h1>
+          </h1>
            
 <h2 style="color:green; font-family: Helvetica">
 
