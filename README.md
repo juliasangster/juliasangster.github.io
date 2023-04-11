@@ -32,7 +32,7 @@ Contact Me:
 	My website is currently a WIP.</p>
 
 
-<pre>
+<pre style="background-color:white">
                        .,,uod8B8bou,,.
               ..,uod8BBBBBBBBBBBBBBBBRPFT?l!i:.
          ,=m8BBBBBBBBBBBBBBBRPFT?!||||||||||||||
