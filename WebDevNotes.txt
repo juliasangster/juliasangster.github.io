@@ -1,0 +1,15 @@
+
+Sample of HTML div 
+
+<div class="city">
+  <h2>London</h2>
+  <p>London is the capital of England.</p>
+</div>
+
+- HTML classes exist and are how you can interact with JavaScript (one way at least)
+
+JS:
+
+Function .getElementByClassName() seems useful
+- Seems to be the way to do for loops and stuff 
+
