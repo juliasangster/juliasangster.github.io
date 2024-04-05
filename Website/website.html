@@ -73,6 +73,28 @@
                       `!^"'
 </pre>
 
+<button class="accordian">Test Project Drop Down</button>
+<div class="panel">
+  <p>Test Hidden Content</p>
+</div>
+
+<script> 
+  var accord_elems = document.getElementsByClassName("accordian");
+  var i;
+
+  for (i = 0; i < accord_elems.length; i++) {
+    accord_elems[i].addEventListener("clicl", function() {
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      if(panel.style.display === "block") {
+        panel.style.display = "none";
+      } else {
+        panel.style.display = "block";
+      }
+    })
+  }
+</script>
+
 </body>
 
 </html>
