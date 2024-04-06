@@ -1,41 +1,46 @@
 <html>
-<body style = "background-color:white">
 
-<h1 style="background-color: white;
+<head>
+  <link rel='stylesheet' type='text/css' href='style.css'>
+</head>
+
+<body style="background-color:white">
+
+  <h1 style="background-color: white;
            font-family:Helvetica">
-           
-           Julia Sangster
-           
-           </h1>
-           
-<h2 style="color:green; font-family: Helvetica">
 
-About Me:
-</h2>
+    Julia Sangster
 
-<ul style = "font-family:Helvetica">
-	<li> Graduated from UWaterloo with a Bachelor's in Biochemistry in 2021 </li>
+  </h1>
+
+  <h2 style="color:green; font-family: Helvetica">
+
+    About Me:
+  </h2>
+
+  <ul style="font-family:Helvetica">
+    <li> Graduated from UWaterloo with a Bachelor's in Biochemistry in 2021 </li>
     <li> Currently attending UBC for a Bachelor's in Computer Science </li>
-  	</ul>
+  </ul>
 
 
-<h2 style="color:green; font-family: Helvetica">
+  <h2 style="color:green; font-family: Helvetica">
 
-Contact Me:
-</h2>
+    Contact Me:
+  </h2>
 
-<ul style = "font-family:Helvetica">
-	<li> <a href = "mailto: juliasangster@hotmail">Send Email</a></li>
+  <ul style="font-family:Helvetica">
+    <li> <a href="mailto: juliasangster@hotmail">Send Email</a></li>
     <li> <a href="https://www.linkedin.com/in/julia-sangster-838659174">LinkedIn</a> </li>
-        <li> <a href ="https://github.com/juliasangster">GitHub</a>
-  	</ul>
-
-           
-<p style = "font-family:Helvetica">
-	My website is currently a WIP.</p>
+    <li> <a href="https://github.com/juliasangster">GitHub</a>
+  </ul>
 
 
-<pre>
+  <p style="font-family:Helvetica">
+    My website is currently a WIP.</p>
+
+
+  <pre>
                        .,,uod8B8bou,,.
               ..,uod8BBBBBBBBBBBBBBBBRPFT?l!i:.
          ,=m8BBBBBBBBBBBBBBBRPFT?!||||||||||||||
@@ -68,5 +73,33 @@ Contact Me:
                       `!^"'
 </pre>
 
+<button class="accordian">Test Project Drop Down</button>
+<div class="panel">
+  <p>Test Hidden Content</p>
+</div>
+
+<button class="accordian">Test Project Drop Down 2</button>
+<div class="panel">
+  <p>Test Hidden Content 2</p>
+</div>
+
+<script> 
+  var accord_elems = document.getElementsByClassName("accordian");
+  var i;
+
+  for (i = 0; i < accord_elems.length; i++) {
+    accord_elems[i].addEventListener("clicl", function() {
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      if(panel.style.display === "block") {
+        panel.style.display = "none";
+      } else {
+        panel.style.display = "block";
+      }
+    })
+  }
+</script>
+
 </body>
+
 </html>
