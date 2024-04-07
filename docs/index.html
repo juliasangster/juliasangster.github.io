@@ -73,30 +73,33 @@
                       `!^"'
 </pre>
 
-<button class="accordian">Test Project Drop Down</button>
+<button class="accordion">Test Project Drop Down</button>
 <div class="panel">
   <p>Test Hidden Content</p>
 </div>
 
-<button class="accordian">Test Project Drop Down 2</button>
+<button class="accordion">Test Project Drop Down 2</button>
 <div class="panel">
   <p>Test Hidden Content 2</p>
 </div>
 
 <script> 
-  var accord_elems = document.getElementsByClassName("accordian");
+  var accord_elems = document.getElementsByClassName("accordion");
   var i;
 
   for (i = 0; i < accord_elems.length; i++) {
-    accord_elems[i].addEventListener("clicl", function() {
-      this.classList.toggle("active");
-      var panel = this.nextElementSibling;
-      if(panel.style.display === "block") {
-        panel.style.display = "none";
-      } else {
-        panel.style.display = "block";
+    accord_elems[i].addEventListener("click", 
+      function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        var panelStyle = window.getComputedStyle(panel); 
+        if(panel.style.display === "block") {
+          panel.style.display = "none";
+        } else {
+          panel.style.display = "block";
+        }
       }
-    })
+    );
   }
 </script>
 

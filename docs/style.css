@@ -1,11 +1,11 @@
 
-.accordian {
+.accordion {
     width: 100%;
     text-align: left;
     transition: 0.4s;
 }
 
-.active, .accordian:hover {
+.active, .accordion:hover {
     background-color: #ccc;
 }
 
