@@ -1,3 +1,21 @@
+body {
+    background-color: white;
+}
+
+h1 {
+    background-color: white;
+    font-family:Helvetica;
+}
+
+h2 {
+    color:green; 
+    font-family: Helvetica;
+}
+
+ul {
+    font-family:Helvetica;
+
+}
 
 .accordion {
     width: 100%;
@@ -15,3 +33,32 @@
     display: none;
 }
 
+.topnavbar {
+    background-color:green;
+    overflow: hidden;
+}
+
+.topnavbar a {
+    float:left;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnavbar a:hover {
+    background-color: white;
+    color: green;
+    font-weight: bold;
+ }
+ 
+ .topnavbar a.active {
+    background-color:  #45a145;
+    color: white;
+  }
+  
+  .topnav .icon {
+    display: none;
+  }
