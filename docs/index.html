@@ -93,10 +93,10 @@
         this.classList.toggle("active");
         var panel = this.nextElementSibling;
         var panelStyle = window.getComputedStyle(panel); 
-        if(panel.style.display === "block") {
-          panel.style.display = "none";
+        if(panel.style.display === "" || panel.style.display === "none") {
+          panel.style.display = "block"; // Show the panel
         } else {
-          panel.style.display = "block";
+          panel.style.display = "none";  // Hide the panel
         }
       }
     );
