@@ -2,6 +2,10 @@ body {
     background-color: white;
 }
 
+p {
+    font-family:Helvetica;
+}
+
 h1 {
     background-color: white;
     font-family:Helvetica;
@@ -46,6 +50,7 @@ ul {
     color: white;
     text-decoration: none;
     font-size: 17px;
+    font-family: Helvetica;
 }
 
 .topnavbar a:hover {
