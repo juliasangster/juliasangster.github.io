@@ -7,7 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 const Home = () => <div>
   <h1> Welcome to my Personal Website! 🥳 </h1>
   <h6>I began converting my personal website from pure HTML/CSS to React on January 16th, 2025</h6>
-  <h6>  If you're a lululemon recruiter, please know the timing of this transfer was poorly timed with my application</h6>
+  <h6>  If you're a Plotly recruiter, please know the timing of my website refactoring was poorly timed with my application</h6>
   <h4>I hope to hear from you soon!</h4>
 
   <h4>- Julia </h4> 
