@@ -3,21 +3,15 @@ import Navbar from 'react-bootstrap/Navbar';
 import {HashRouter, Routes, Route, Link} from 'react-router-dom';
 import Nav from 'react-bootstrap/Nav';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Home from './Home';
 
-const Home = () => <div>
-  <h1> Welcome to my Personal Website! 🥳 </h1>
-  <h6>I began converting my personal website from pure HTML/CSS to React on January 16th, 2025</h6>
-  <h6>  If you're a Plotly recruiter, please know the timing of my website refactoring was poorly timed with my application</h6>
-  <h4>I hope to hear from you soon!</h4>
-
-  <h4>- Julia </h4> 
-</div>;
-const About = () => <div>About Page</div>;
+const Crafts = () => <div>Crafts</div>;
 const Contact = () => <div>Contact Page</div>;
 
 function App() {
   return (
     <div className="App"> 
+    <h1>test</h1>
       <HashRouter>
           <Navbar>
             <Navbar.Brand
@@ -25,16 +19,15 @@ function App() {
               style={{fontFamily: "Consolas, monaco, monospace", color: "#007200"}}> Julia Sangster </Navbar.Brand>
             <Navbar.Collapse>
               <Nav.Link as={Link} to="/" className="mx-3">Home</Nav.Link>
-              <Nav.Link as={Link} to="/about" className="mx-3">About</Nav.Link>
               <Nav.Link as={Link} to="/contact" className="mx-3">Contact</Nav.Link>
+              <Nav.Link as={Link} to="/fun_stuff" className="mx-3">Crafts</Nav.Link>
             </Navbar.Collapse>
           </Navbar>
 
-
           <Routes>
             <Route path="/" element = {<Home />} />
-            <Route path="/about" element = {<About />} />
             <Route path="/contact" element = {<Contact />} />
+            <Route path="/fun_stuff" element = {<Crafts />} />
           </Routes>
 
       </HashRouter>
@@ -42,6 +35,5 @@ function App() {
     </div>
   );
 }
-
 
 export default App;
